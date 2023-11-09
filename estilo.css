@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(225, 54, 82);
+    background: url(imagens/mirelly.jpg) no-repeat;
+    
+}
+h1 {
+    color :red;
+}
+h2 {
+    color: blue;
+}
+.texto{
+    font-size: 1.5em;
+   
+    text-align: center;
+}
+/* configurando o menu menu*/
+
+
+nav#menu ul{
+	text-transform:uppercase;
+	position:absolute;
+	top:15px;
+	left:500px;
+}
+
+nav#menu > ul > li {
+    
+    color: rgb(238, 227, 24);
+	display:inline-block;
+	background-color:#33ff00;
+	padding:10px;
+	right:40px;
+    margin-bottom: 10px;
+    margin-left: 1rem;
+	
+}
+nav#menu a:hover{
+	color:#ff0000 ;
+    transform: scale(1.5);
+	
+}
+
+/*configurando galeria de imagem*/
+.principal {
+    width: 60%; 
+    margin: 2rem auto;
+}
+.galeria {
+    display:  grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:  repeat(4, 5vw);
+    gap: 1rem;
+}
+.imgGaleria {
+    width: 100%;
+    height: 100%;
+    object-fit: fill ;
+    display: block;
+}
+.itemGaleria {
+    overflow: hidden;
+}
+.item01 {
+    grid-column: 1 / span 2;
+    grid-row:  1 / span 2;
+}
+.item02 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+}
+.item03 {
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 2;
+}
+.item04 {
+    grid-column:  1 / span 2;
+    grid-row: 3 / span 2;
+}
+.item05 {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 2;
+}
+.item06 {
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 2;
+}
+.item07 {
+    grid-column: 5 / span 2;
+    grid-row: 3 / span 2;
+}
+.poema {
+    font-family: Segoe Script;
+    color: #003300;
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.footer {
+    color: blue;
+    text-align: right;
+    font-size: 2em;
+}
+img {
+    transition: 0.5s;
+}
+img:hover {
+    transform: scale(1.3);
+}

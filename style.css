@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: rgb(241, 11, 11);
+}
+a {
+    color: #fff;
+}
+.container {
+    background: #dcdcdc;
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: "l c r" "m f p";
+    
+    grid-template-columns: 1frc 1frc 1frc;
+    grid-template-rows: 1fr 1fr ;
+
+    /*as medidas podem ser direto nas div em px ou rem*/
+
+}
+.nav-left {
+    grid-area: l;
+    background: url(imagens/mica.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment:local;
+
+    width: 250px;
+    height: 250px
+}
+.nav-centro {
+    
+    grid-area: c;
+    background: url(imagens/diogo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment:local;
+
+    width: 250px;
+    height: 250px
+}
+.nav-right {
+   
+    grid-area: r;
+    background: url(imagens/rebeca.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment:local;
+    width: 250px;
+    height: 250px;
+}
+.nav-meio {
+ 
+    grid-area: m;
+    background: url(imagens/mica03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment:local;
+
+    width: 250px;
+    height: 250px
+}
+.nav-footer {
+  
+    grid-area: f;
+    background: url(imagens/rebeca01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment:local;
+
+    width: 250px;
+    height: 250px
+}
+.nav-pe {
+   
+    grid-area: p;
+   
+    background: url(imagens/palmeiras.bmp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment:local;
+    
+    width: 250px;
+    height: 250px
+}
+
+
+
+
+@media only screen and (max-width: 800px) { 
+    .container {
+        grid-template-areas: "l" "c" "r" "m" "f" "p";
+        grid-template-rows: 3fr 2fr;
+        grid-template-columns: 2fr;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    background{ url(imagens/mirelly01.jpg) no-repeat;
+}
+    
+    
+    .container {
+        grid-template-areas: "l" "c" "r" "m" "f" "p";
+        grid-template-columns: 1fr;
+    }
+}
